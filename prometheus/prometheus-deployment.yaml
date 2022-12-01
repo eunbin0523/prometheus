@@ -13,6 +13,8 @@ spec:
       labels:
         app: prometheus-server
     spec:
+      nodeSelector:
+        node: ops
       containers:
         - name: prometheus
           image: prom/prometheus:latest
