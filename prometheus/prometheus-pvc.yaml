@@ -3,23 +3,10 @@ kind: PersistentVolumeClaim
 metadata:
   name: prometheus-pvc-volume
 spec:
-  storageClassName: local-storage
+  storageClassName: prometheus-storage
   volumeName: prometheus-pv-volume
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 3Gi
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: prometheus-pvc-config-volume
-spec:
-  storageClassName: local-storage
-  volumeName: prometheus-pv-config-volume
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 3Gi
+      storage: 5Gi
