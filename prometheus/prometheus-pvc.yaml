@@ -17,9 +17,9 @@ metadata:
   name: prometheus-pvc-config-volume
 spec:
   storageClassName: local-storage
-  volumeName: prometheus-pv-volume
+  volumeName: prometheus-pv-config-volume
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 2Gi
+      storage: 3Gi
