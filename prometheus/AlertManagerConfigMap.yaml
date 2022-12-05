@@ -31,7 +31,7 @@ data:
         require_tls: false
     - name: slack_demo
       slack_configs:
-      - api_url: https://hooks.slack.com/services/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
+      - api_url: https://hooks.slack.com/services/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
         channel: '#project'
         send_resolved: true
         #text: 'container memory usage rate is very high( > 45%)'
