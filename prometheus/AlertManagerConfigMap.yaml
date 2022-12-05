@@ -24,14 +24,14 @@ data:
     receivers:
     - name: alert-emailer
       email_configs:
-      - to: ekfrl2815@gmail.com
+      - to: ba036@bespin.email
         send_resolved: false
-        from: from-email@email.com
+        from: pinkc47@naver.com
         smarthost: smtp.eample.com:25
         require_tls: false
     - name: slack_demo
       slack_configs:
       - api_url: https://hooks.slack.com/services/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
-        channel: '#auth'
+        channel: '#project'
         send_resolved: true
         #text: 'container memory usage rate is very high( > 45%)'
