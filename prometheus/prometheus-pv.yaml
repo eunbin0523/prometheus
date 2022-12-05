@@ -27,4 +27,4 @@ spec:
         - key: kubernetes.io/hostname
           operator: In
           values:
-          - gke-kf-cluster-01-ops-pool20221202010-32d3ad65-925l
+          - gke-kf-cluster-01-ops-pool20221204080-e3548500-c88c
