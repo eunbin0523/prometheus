@@ -12,7 +12,7 @@ data:
       rules:
       - alert: container memory usage rate is very high( > 55%)
         expr: sum(container_memory_working_set_bytes{pod!="", name=""})/ sum (kube_node_status_allocatable_memory_bytes) * 100 > 55
-        for: 1m
+        for: 0
         labels:
           severity: fatal
         annotations:
@@ -23,7 +23,7 @@ data:
       rules:
       - alert: container CPU usage rate is very high( > 10%)
         expr: sum (rate (container_cpu_usage_seconds_total{pod!=""}[1m])) / sum (machine_cpu_cores) * 100 > 10
-        for: 1m
+        for: 0
         labels:
           severity: fatal
         annotations:
