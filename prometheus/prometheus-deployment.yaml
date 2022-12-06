@@ -13,7 +13,7 @@ spec:
         app: prometheus-server
     spec:
       nodeSelector:
-        node: cicd
+        node: service
       containers:
         - name: prometheus
           image: prom/prometheus:latest
