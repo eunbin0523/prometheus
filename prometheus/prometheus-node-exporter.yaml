@@ -21,7 +21,7 @@ spec:
           protocol: TCP
           name: http
       nodeSelector:
-        node: cicd
+        node: service
       
 ---
 apiVersion: v1
