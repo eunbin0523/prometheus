@@ -20,6 +20,9 @@ spec:
         - containerPort: 9100
           protocol: TCP
           name: http
+      nodeSelector:
+        node: cicd
+      
 ---
 apiVersion: v1
 kind: Service
